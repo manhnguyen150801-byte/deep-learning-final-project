@@ -58,19 +58,22 @@ htmlcov/
 # Data & Large Files
 # ─────────────────────────────────────────
 
-# Raw image datasets (Flickr8k) — too large for Git
-data/
-datasets/
-*.jpg
-*.jpeg
-*.png
-*.gif
-*.bmp
-*.tiff
+# Raw image files — too large for Git (Flickr8k dataset)
+# CSVs (train_image_class.csv, valid_image_class.csv) ARE tracked — they are small metadata files
+data/*.jpg
+data/*.jpeg
+data/*.png
+data/*.gif
+data/*.bmp
+data/*.tiff
+data/Flicker8k_Dataset/
+data/images/
 
-# CSV data files (raw data — keep processed results)
-# Uncomment if you do NOT want raw CSVs tracked:
-# *.csv
+# London weather raw CSV — large file, download separately
+data/london_weather.csv
+
+# Other large dataset folders
+datasets/
 
 # ─────────────────────────────────────────
 # Machine Learning Artefacts
